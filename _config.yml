@@ -18,6 +18,7 @@ exclude:
 
 plugins:
   - jekyll-sitemap
+  - kramdown-parser-gfm
 
 # Custom vars
 title:            Bootstrap

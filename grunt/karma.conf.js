@@ -8,7 +8,12 @@ module.exports = function (config) {
   var conf = {
     basePath: '../',
     frameworks: ['qunit'],
-    plugins: ['karma-qunit'],
+    plugins: [
+      'karma-qunit',
+      'karma-chrome-launcher',
+      'karma-firefox-launcher',
+      'karma-detect-browsers'
+    ],
     // list of files / patterns to load in the browser
     files: [
       'js/tests/vendor/jquery.min.js',

@@ -29,7 +29,8 @@
         "Android >= 4",
         "Chrome >= 20",
         "Firefox >= 24",
-        "Explorer >= 8",
+        "Edge >= 128",
+        "Explorer >= 12",
         "iOS >= 6",
         "Opera >= 12",
         "Safari >= 6"
@@ -45,8 +46,8 @@
       "+function ($) {",
       "  'use strict';",
       "  var version = $.fn.jquery.split(' ')[0].split('.')",
-      "  if ((version[0] < 2 && version[1] < 9) || (version[0] == 1 && version[1] == 9 && version[2] < 1) || (version[0] > 3)) {",
-      "    throw new Error('Bootstrap\\'s JavaScript requires jQuery version 1.9.1 or higher, but lower than version 4')",
+      "  if ((version[0] < 2 && version[1] < 9) || (version[0] == 1 && version[1] == 9 && version[2] < 1) || (version[0] > 4)) {",
+      "    throw new Error('Bootstrap\\'s JavaScript requires jQuery version 1.9.1 or higher, but lower than version 5')",
       "  }",
       "}(jQuery);\n\n"
     ]

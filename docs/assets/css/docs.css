@@ -222,7 +222,6 @@
   content: "$ ";
   -webkit-user-select: none;
   -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
 }
 /*!
@@ -230,9 +229,6 @@
  * Copyright 2014-2019 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/v3-dev/LICENSE)
  */
-@-ms-viewport {
-  width: device-width;
-}
 @viewport {
   width: device-width;
 }
