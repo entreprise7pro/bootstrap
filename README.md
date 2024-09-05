@@ -97,7 +97,7 @@ Please read through our [contributing guidelines](https://github.com/entreprise7
 
 Moreover, if your pull request contains JavaScript patches or features, you must include [relevant unit tests](https://github.com/entreprise7pro/bootstrap/tree/v3-dev/js/tests). All HTML and CSS should conform to the [Code Guide](https://github.com/mdo/code-guide), maintained by [Mark Otto](https://github.com/mdo).
 
-**entreprise7pro fork of Bootstrap v3 is now actively working towards a new release which will be compatible with jQuery 4.** It has gone into maintenance mode so that we can focus our efforts on [Bootstrap v3](https://github.com/entreprise7pro/bootstrap/tree/v3-dev), the future of the entreprise7pro fork of the framework. Pull requests which add new features (rather than fix bugs) should target [Bootstrap v3 (the `v3-dev` git branch)](https://github.com/entreprise7pro/bootstrap/tree/v3-dev) instead.
+**entreprise7pro fork of Bootstrap v3 is now actively working towards a new release which will be compatible with jQuery 4.** Focusing our efforts on [Bootstrap v3](https://github.com/entreprise7pro/bootstrap/tree/v3-dev), the future of the entreprise7pro forked bootstrap release of the framework. Pull requests which add new features (rather than fix bugs) should target [Bootstrap v3 (the `v3-dev` git branch)](https://github.com/entreprise7pro/bootstrap/tree/v3-dev).
 
 Editor preferences are available in the [editor config](https://github.com/entreprise7pro/bootstrap/blob/v3-dev/.editorconfig) for easy use in common text editors. Read more and download plugins at <https://editorconfig.org/>.
 
