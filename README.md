@@ -28,12 +28,10 @@ To get started, check out <https://getbootstrap.com/>!
 
 Several quick start options are available:
 
-* [Download the latest release](https://github.com/entreprise7pro/bootstrap/archive/v3.4.2.zip).
-* Clone the repo: `git clone https://github.com/twbs/bootstrap.git`.
-* Install with [Bower](https://bower.io/): `bower install bootstrap`.
-* Install with [npm](https://www.npmjs.com/): `npm install bootstrap@3`.
-* Install with [Meteor](https://www.meteor.com/): `meteor add twbs:bootstrap`.
-* Install with [Composer](https://getcomposer.org/): `composer require twbs/bootstrap`.
+* [Download the latest release](https://github.com/entreprise7pro/bootstrap/archive/v3.4.2.zip).  USE THIS APPROACH NOW, AS THE OTHERS ARE NOT YET READY
+* Clone the repo: `git clone https://github.com/entreprise7pro/bootstrap.git`.
+* Install with [Meteor](https://www.meteor.com/): `meteor add entreprise7pro:bootstrap`. TBD
+* Install with [Composer](https://getcomposer.org/): `composer require entreprise7pro/bootstrap`. TBD
 
 Read the [Getting started page](https://getbootstrap.com/docs/3.4/getting-started/) for information on the framework contents, templates and examples, and more.
 
@@ -68,7 +66,7 @@ We provide compiled CSS and JS (`bootstrap.*`), as well as compiled and minified
 
 ## Bugs and feature requests
 
-Have a bug or a feature request? Please first read the [issue guidelines](https://github.com/twbs/bootstrap/blob/v3-dev/CONTRIBUTING.md#using-the-issue-tracker) and search for existing and closed issues. If your problem or idea is not addressed yet, [please open a new issue](https://github.com/twbs/bootstrap/issues/new).
+Have a bug or a feature request? Please first read the [issue guidelines](https://github.com/entreprise7pro/bootstrap/blob/v3-dev/CONTRIBUTING.md#using-the-issue-tracker) and search for existing and closed issues. If your problem or idea is not addressed yet, [please open a new issue](https://github.com/entreprise7pro/bootstrap/issues/new).
 
 Note that **feature requests must target [Bootstrap v3](https://github.com/entreprise7pro/bootstrap/tree/v3-dev),** because Bootstrap v3 is now in maintenance mode and is closed off to new features. This is so that we can focus our efforts on Bootstrap v3.
 
