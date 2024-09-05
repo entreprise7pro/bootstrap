@@ -1436,7 +1436,7 @@ $(function () {
         + '.tooltip, .tooltip *, .tooltip *:before, .tooltip *:after { box-sizing: border-box; }'
         + '.tooltip { position: absolute; }'
         + '.tooltip .tooltip-inner { width: 24px; height: 24px; font-family: Helvetica; }'
-        + '#target { position: absolute; top: 100px; left: 50px; width: 100px; height: 200px; -webkit-transform: rotate(270deg); -ms-transform: rotate(270deg); transform: rotate(270deg); }'
+        + '#target { position: absolute; top: 100px; left: 50px; width: 100px; height: 200px; -webkit-transform: rotate(270deg); transform: rotate(270deg); }'
         + '</style>'
     var $styles = $(styles).appendTo('head')
 

@@ -220,17 +220,7 @@
 .language-bash:before {
   color: #033;
   content: "$ ";
-  -webkit-user-select: none;
-  -moz-user-select: none;
   user-select: none;
-}
-/*!
- * IE10 viewport hack for Surface/desktop Windows 8 bug
- * Copyright 2014-2019 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/v3-dev/LICENSE)
- */
-@viewport {
-  width: device-width;
 }
 .btn-outline {
   color: #563d7c;
@@ -737,7 +727,6 @@
   border-color: #e5e5e5 #eee #eee;
   border-style: solid;
   border-width: 1px 0;
-  -webkit-box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.05);
   box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.05);
 }
 .bs-example:after {
@@ -768,7 +757,6 @@
     border-color: #ddd;
     border-width: 1px;
     border-radius: 4px 4px 0 0;
-    -webkit-box-shadow: none;
     box-shadow: none;
   }
   .bs-example + .highlight,
@@ -982,7 +970,6 @@
   border-color: rgba(82, 168, 236, 0.8);
   outline: 0;
   outline: thin dotted \9;
-  -webkit-box-shadow: 0 0 8px rgba(82, 168, 236, 0.6);
   box-shadow: 0 0 8px rgba(82, 168, 236, 0.6);
 }
 .bs-callout {
@@ -1257,7 +1244,6 @@
   color: #fff;
   background-color: #d9534f;
   border-bottom: 1px solid #b94441;
-  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25);
 }
 .bs-customizer-alert .close {
@@ -1275,7 +1261,6 @@
   color: #fff;
   background-color: #a83c3a;
   border-color: #973634;
-  -webkit-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05), 0 1px 0 rgba(255, 255, 255, 0.1);
   box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05), 0 1px 0 rgba(255, 255, 255, 0.1);
 }
 .bs-dropzone {
@@ -1405,8 +1390,6 @@
 }
 *:hover > .anchorjs-link {
   opacity: 0.75;
-  -webkit-transition: color 0.16s linear;
-  -o-transition: color 0.16s linear;
   transition: color 0.16s linear;
 }
 *:hover > .anchorjs-link:hover,
@@ -1426,7 +1409,6 @@
   background-clip: padding-box;
   border: 1px solid #ddd;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  -webkit-box-shadow: 0 8px 15px rgba(0, 0, 0, 0.175);
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.175);
 }
 @media (min-width: 768px) {
@@ -1447,7 +1429,6 @@
   margin-top: 0 !important;
 }
 .algolia-autocomplete .ds-dropdown-menu .ds-input {
-  -webkit-box-shadow: none;
   box-shadow: none;
 }
 .algolia-autocomplete .algolia-docsearch-suggestion {
@@ -1524,7 +1505,6 @@
   background-color: #eee;
 }
 .algolia-autocomplete .algolia-docsearch-suggestion--text .algolia-docsearch-suggestion--highlight {
-  -webkit-box-shadow: inset 0 -2px 0 0 rgba(95, 45, 171, 0.5) !important;
   box-shadow: inset 0 -2px 0 0 rgba(95, 45, 171, 0.5) !important;
 }
 .algolia-autocomplete .ds-suggestion.ds-cursor .algolia-docsearch-suggestion--content {

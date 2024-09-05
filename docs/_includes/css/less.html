@@ -241,22 +241,18 @@ a {
 {% highlight scss %}
 .rotate(@degrees) {
   -webkit-transform: rotate(@degrees);
-      -ms-transform: rotate(@degrees); // IE9 only
           transform: rotate(@degrees);
 }
 .scale(@ratio; @ratio-y...) {
   -webkit-transform: scale(@ratio, @ratio-y);
-      -ms-transform: scale(@ratio, @ratio-y); // IE9 only
           transform: scale(@ratio, @ratio-y);
 }
 .translate(@x; @y) {
   -webkit-transform: translate(@x, @y);
-      -ms-transform: translate(@x, @y); // IE9 only
           transform: translate(@x, @y);
 }
 .skew(@x; @y) {
   -webkit-transform: skew(@x, @y);
-      -ms-transform: skewX(@x) skewY(@y); // See https://github.com/twbs/bootstrap/issues/4885; IE9+
           transform: skew(@x, @y);
 }
 .translate3d(@x; @y; @z) {
@@ -266,12 +262,10 @@ a {
 
 .rotateX(@degrees) {
   -webkit-transform: rotateX(@degrees);
-      -ms-transform: rotateX(@degrees); // IE9 only
           transform: rotateX(@degrees);
 }
 .rotateY(@degrees) {
   -webkit-transform: rotateY(@degrees);
-      -ms-transform: rotateY(@degrees); // IE9 only
           transform: rotateY(@degrees);
 }
 .perspective(@perspective) {
@@ -287,7 +281,6 @@ a {
 .transform-origin(@origin) {
   -webkit-transform-origin: @origin;
      -moz-transform-origin: @origin;
-      -ms-transform-origin: @origin; // IE9 only
           transform-origin: @origin;
 }
 {% endhighlight %}
@@ -327,12 +320,10 @@ a {
 {% endhighlight %}
 
   <h3 id="less-mixins-opacity">Opacity</h3>
-  <p>Set the opacity for all browsers and provide a <code>filter</code> fallback for IE8.</p>
+  <p>Set the opacity for all browsers.</p>
 {% highlight scss %}
 .opacity(@opacity) {
   opacity: @opacity;
-  // IE8 filter
-  @opacity-ie: (@opacity * 100);
   filter: ~"alpha(opacity=@{opacity-ie})";
 }
 {% endhighlight %}
@@ -342,7 +333,6 @@ a {
 {% highlight scss %}
 .placeholder(@color: @input-color-placeholder) {
   &::-moz-placeholder           { color: @color; } // Firefox
-  &:-ms-input-placeholder       { color: @color; } // Internet Explorer 10+
   &::-webkit-input-placeholder  { color: @color; } // Safari and Chrome
 }
 {% endhighlight %}
