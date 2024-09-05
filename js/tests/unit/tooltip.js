@@ -1242,7 +1242,7 @@ $(function () {
 
   QUnit.test('should correctly position tooltips on SVG elements', function (assert) {
     if (!window.SVGElement) {
-      // Skip IE8 since it doesn't support SVG
+      // This verification is not jQuery specific and should still be safe with modern browsers.
       assert.expect(0)
       return
     }
