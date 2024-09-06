@@ -41,7 +41,7 @@ cdn:
   # See https://www.srihash.org for info on how to generate the hashes
   css:            https://cdn.jsdelivr.net/gh/entreprise7pro/bootstrap@v3-dev-2/dist/css/bootstrap.min.css
   css_hash:       "sha384-QpVPwZfO+N3cvfdvzKZfFNjhUQP44awtjoTKG2JIbLAmG3gN0BwOYZuLiY4FBaUw"
-  css_theme:      https://cdn.jsdelivr.net/gh/entreprise7pro/bootstrap@v3-dev-2/dist/css/bootstrap.min.css
+  css_theme:      https://cdn.jsdelivr.net/gh/entreprise7pro/bootstrap@v3-dev-2/dist/css/bootstrap-theme.min.css
   css_theme_hash: "sha384-eVG4bx/KGF4rOjcsh6egYynE7w9Um8FxRmdYg5VqtRMM5dmwF3ZWcZdv/5JXVRYg"
   js:             https://cdn.jsdelivr.net/gh/entreprise7pro/bootstrap@v3-dev-2/dist/js/bootstrap.min.js
   js_hash:        "sha384-ICJDAy3AurX1E/GYPssPcjzK1A9xqKwEv51XhoMyr8L//sY2EenYzBUOzdIy63UU"
