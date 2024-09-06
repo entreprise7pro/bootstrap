@@ -11,8 +11,8 @@
     "framework",
     "web"
   ],
-  "homepage": "https://getbootstrap.com/",
-  "author": "Twitter, Inc.",
+  "homepage": "https://bootstrap.7pro.ca/",
+  "author": "Entreprise 7pro.ca Inc since v3.4.2 / Previous releases by Twitter Inc (now X)",
   "scripts": {
     "netlify": "grunt dist docs-css docs-js copy:docs build-glyphicons-data build-customizer && npm run sri && grunt jekyll:netlify",
     "sri": "node grunt/generate-sri.js",
@@ -27,10 +27,10 @@
   "main": "./dist/js/npm",
   "repository": {
     "type": "git",
-    "url": "https://github.com/twbs/bootstrap.git"
+    "url": "https://github.com/entreprise7pro/bootstrap.git"
   },
   "bugs": {
-    "url": "https://github.com/twbs/bootstrap/issues"
+    "url": "https://github.com/entreprise7pro/bootstrap/issues"
   },
   "license": "MIT",
   "dependencies": {},

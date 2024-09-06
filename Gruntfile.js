@@ -42,7 +42,8 @@ module.exports = function (grunt) {
     pkg: grunt.file.readJSON('package.json'),
     banner: '/*!\n' +
             ' * Bootstrap v<%= pkg.version %> (<%= pkg.homepage %>)\n' +
-            ' * Copyright 2011-<%= grunt.template.today("yyyy") %> <%= pkg.author %>\n' +
+            ' * Copyright <%= grunt.template.today("yyyy") %> <%= pkg.author %>\n' +
+            ' * Copyright 2011-2019 Twitter Inc (now X)\n' +
             ' * Licensed under the <%= pkg.license %> license\n' +
             ' */\n',
     jqueryCheck: configBridge.config.jqueryCheck.join('\n'),

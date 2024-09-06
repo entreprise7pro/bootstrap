@@ -8,9 +8,9 @@ permalink:        pretty
 # Server
 source:           docs
 destination:      _gh_pages
-host:             0.0.0.0
-port:             9001
-url:              https://getbootstrap.com
+host:             192.99.42.202
+port:             443
+url:              https://bootstrap.7pro.ca
 baseurl:          /docs/3.4
 encoding:         UTF-8
 exclude:
@@ -23,15 +23,15 @@ plugins:
 # Custom vars
 title:            Bootstrap
 description:      "The world's most popular mobile-first and responsive front-end framework."
-current_version:  3.4.1
+current_version:  3.4.2
 docs_version:     3.4
-repo:             https://github.com/twbs/bootstrap
-sass_repo:        https://github.com/twbs/bootstrap-sass
+repo:             https://github.com/entreprise7pro/bootstrap
+sass_repo:        https://github.com/entreprise7pro/bootstrap-sass
 
 download:
-  source:         https://github.com/twbs/bootstrap/archive/v3.4.1.zip
-  dist:           https://github.com/twbs/bootstrap/releases/download/v3.4.1/bootstrap-3.4.1-dist.zip
-  sass:           https://github.com/twbs/bootstrap-sass/archive/v3.4.1.tar.gz
+  source:         https://github.com/entreprise7pro/bootstrap/archive/v3-dev-2.zip
+  dist:           https://github.com/entreprise7pro/bootstrap/releases/download/v3-dev-2/bootstrap-v3-dev-2-dist.zip
+  sass:           https://github.com/entreprise7pro/bootstrap-sass/archive/v3-dev-2.tar.gz
 
 blog:             https://blog.getbootstrap.com
 expo:             https://expo.getbootstrap.com
@@ -39,9 +39,9 @@ themes:           https://themes.getbootstrap.com
 
 cdn:
   # See https://www.srihash.org for info on how to generate the hashes
-  css:            https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css
-  css_hash:       "sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu"
-  css_theme:      https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css
-  css_theme_hash: "sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ"
-  js:             https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js
-  js_hash:        "sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+  css:            https://cdn.jsdelivr.net/gh/entreprise7pro/bootstrap@v3-dev-2/dist/css/bootstrap.min.css
+  css_hash:       "sha384-QpVPwZfO+N3cvfdvzKZfFNjhUQP44awtjoTKG2JIbLAmG3gN0BwOYZuLiY4FBaUw"
+  css_theme:      https://cdn.jsdelivr.net/gh/entreprise7pro/bootstrap@v3-dev-2/dist/css/bootstrap.min.css
+  css_theme_hash: "sha384-eVG4bx/KGF4rOjcsh6egYynE7w9Um8FxRmdYg5VqtRMM5dmwF3ZWcZdv/5JXVRYg"
+  js:             https://cdn.jsdelivr.net/gh/entreprise7pro/bootstrap@v3-dev-2/dist/js/bootstrap.min.js
+  js_hash:        "sha384-ICJDAy3AurX1E/GYPssPcjzK1A9xqKwEv51XhoMyr8L//sY2EenYzBUOzdIy63UU"

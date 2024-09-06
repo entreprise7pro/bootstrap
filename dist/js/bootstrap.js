@@ -1,6 +1,7 @@
 /*!
- * Bootstrap v3.4.2 (https://getbootstrap.com/)
- * Copyright 2011-2024 Twitter, Inc.
+ * Bootstrap v3.4.2 (https://bootstrap.7pro.ca/)
+ * Copyright 2024 Entreprise 7pro.ca Inc since v3.4.2 / Previous releases by Twitter Inc (now X)
+ * Copyright 2011-2019 Twitter Inc (now X)
  * Licensed under the MIT license
  */
 
