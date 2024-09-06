@@ -8,8 +8,8 @@ permalink:        pretty
 # Server
 source:           docs
 destination:      _gh_pages
-host:             192.99.42.202
-port:             443
+host:             0.0.0.0
+port:             9001
 url:              https://bootstrap.7pro.ca
 baseurl:          /docs/3.4
 encoding:         UTF-8
