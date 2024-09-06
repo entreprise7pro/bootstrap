@@ -1,9 +1,10 @@
 /* ========================================================================
- * Bootstrap: collapse.js v3.4.1
- * https://getbootstrap.com/docs/3.4/javascript/#collapse
+ * Bootstrap: collapse.js v3.4.2
+ * https://bootstrap.7pro.ca/docs/3.4/javascript/#collapse
  * ========================================================================
+ * Copyright 2024 Entreprise 7pro.ca Inc.
  * Copyright 2011-2019 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/v3-dev/LICENSE)
+ * Licensed under MIT (https://github.com/entreprise7pro/bootstrap/blob/v3-dev/LICENSE)
  * ======================================================================== */
 
 /* jshint latedef: false */
@@ -30,7 +31,7 @@
     if (this.options.toggle) this.toggle()
   }
 
-  Collapse.VERSION  = '3.4.1'
+  Collapse.VERSION  = '3.4.2'
 
   Collapse.TRANSITION_DURATION = 350
 

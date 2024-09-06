@@ -26,12 +26,12 @@ description:      "The world's most popular mobile-first and responsive front-en
 current_version:  3.4.2
 docs_version:     3.4
 repo:             https://github.com/entreprise7pro/bootstrap
-sass_repo:        https://github.com/entreprise7pro/bootstrap-sass
+sass_repo:        https://github.com/twbs/bootstrap-sass
 
 download:
-  source:         https://github.com/entreprise7pro/bootstrap/archive/v3-dev-2.zip
-  dist:           https://github.com/entreprise7pro/bootstrap/releases/download/v3-dev-2/bootstrap-v3-dev-2-dist.zip
-  sass:           https://github.com/entreprise7pro/bootstrap-sass/archive/v3-dev-2.tar.gz
+  source:         https://github.com/entreprise7pro/bootstrap/archive/v3-dev-3.zip
+  dist:           https://github.com/entreprise7pro/bootstrap/archive/refs/tags/v3-dev-3.zip
+  sass:           https://github.com/twbs/bootstrap-sass/archive/refs/tags/v3.4.1.tar.gz
 
 blog:             https://blog.getbootstrap.com
 expo:             https://expo.getbootstrap.com
@@ -40,8 +40,8 @@ themes:           https://themes.getbootstrap.com
 cdn:
   # See https://www.srihash.org for info on how to generate the hashes
   css:            https://cdn.jsdelivr.net/gh/entreprise7pro/bootstrap@v3-dev-2/dist/css/bootstrap.min.css
-  css_hash:       "sha384-QpVPwZfO+N3cvfdvzKZfFNjhUQP44awtjoTKG2JIbLAmG3gN0BwOYZuLiY4FBaUw"
+  css_hash:       "sha384-9nFRBeRwI4q8y+NyhfS1P8D8vrfocola09o+8bDiGAG/4Nxy2nik+JxFLn1ar/Uq"
   css_theme:      https://cdn.jsdelivr.net/gh/entreprise7pro/bootstrap@v3-dev-2/dist/css/bootstrap-theme.min.css
-  css_theme_hash: "sha384-eVG4bx/KGF4rOjcsh6egYynE7w9Um8FxRmdYg5VqtRMM5dmwF3ZWcZdv/5JXVRYg"
+  css_theme_hash: "sha384-+deWa+Ch77YJ7Iq1ceYpndDQNxt0UfdyJ/0Y9revpNJ1SWJT1uNLb0NBgTtQof2U"
   js:             https://cdn.jsdelivr.net/gh/entreprise7pro/bootstrap@v3-dev-2/dist/js/bootstrap.min.js
-  js_hash:        "sha384-ICJDAy3AurX1E/GYPssPcjzK1A9xqKwEv51XhoMyr8L//sY2EenYzBUOzdIy63UU"
+  js_hash:        "sha384-69neixD8cS9d0n7Hli1COsEJcuqkVpeTa1F836pkBk3Jon7Ls4lDMbyN3fyYCxtc"
