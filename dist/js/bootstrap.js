@@ -5,13 +5,11 @@
  * Licensed under the MIT license
  */
 
+if (typeof $ != 'undefined') {
+  jQuery = $;
+}
 if (typeof jQuery === 'undefined') {
-  if (typeof $ != 'undefined') {
-    jQuery = $;
-  }
-  else {
-    throw new Error('Bootstrap\'s JavaScript requires jQuery');
-  }
+  throw new Error('Bootstrap\'s JavaScript requires jQuery');
 }
 
 +function ($) {
