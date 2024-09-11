@@ -73,7 +73,7 @@ Note that **feature requests must target [Bootstrap v3](https://github.com/entre
 
 ## Documentation
 
-Bootstrap's documentation, included in this repo in the root directory, is built with [Jekyll](https://jekyllrb.com/) and publicly hosted on GitHub Pages at <https://getbootstrap.com/>. The docs may also be run locally.
+Bootstrap's documentation, included in this repo in the root directory, is built with [Jekyll](https://jekyllrb.com/) and publicly hosted on GitHub Pages at <https://bootstrap.7pro.ca/>. The docs may also be run locally.
 
 ### Running documentation locally
 
