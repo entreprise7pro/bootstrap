@@ -6,7 +6,12 @@
  */
 
 if (typeof jQuery === 'undefined') {
-  throw new Error('Bootstrap\'s JavaScript requires jQuery')
+  if (typeof $ != 'undefined') {
+    jQuery = $;
+  }
+  else {
+    throw new Error('Bootstrap\'s JavaScript requires jQuery');
+  }
 }
 
 +function ($) {
