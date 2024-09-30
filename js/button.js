@@ -47,8 +47,7 @@
     // push to event loop to allow forms to submit
     setTimeout($.proxy(function () {
       // Sanitize the content from data[state]
-      var sanitizedContent = data[state] == null ? this.options[state] : this.sanitize(data[state])
-      $el[val](sanitizedContent)
+      $el[val](data[state] == null ? this.options[state] : this.sanitize(data[state]))
 
       if (state == 'loadingText') {
         this.isLoading = true
