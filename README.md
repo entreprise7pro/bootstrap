@@ -28,7 +28,7 @@ To get started, check out <https://getbootstrap.com/>!
 
 Several quick start options are available:
 
-* [Download the latest release](https://github.com/entreprise7pro/bootstrap/archive/refs/tags/v3-dev-7.zip).  USE THIS APPROACH NOW, AS THE OTHERS ARE NOT YET READY
+* [Download the latest release](https://github.com/entreprise7pro/bootstrap/archive/refs/tags/v3.4.2.zip).  USE THIS APPROACH NOW, AS THE OTHERS ARE NOT YET READY
 * Clone the repo: `git clone https://github.com/entreprise7pro/bootstrap.git`.
 * Install with [Meteor](https://www.meteor.com/): `meteor add entreprise7pro:bootstrap`. TBD
 * Install with [Composer](https://getcomposer.org/): `composer require entreprise7pro/bootstrap`. TBD
@@ -97,7 +97,7 @@ Please read through our [contributing guidelines](https://github.com/entreprise7
 
 Moreover, if your pull request contains JavaScript patches or features, you must include [relevant unit tests](https://github.com/entreprise7pro/bootstrap/tree/v3-dev/js/tests). All HTML and CSS should conform to the [Code Guide](https://github.com/mdo/code-guide), maintained by [Mark Otto](https://github.com/mdo).
 
-**entreprise7pro fork of Bootstrap v3 is now actively working towards a new release which will be compatible with jQuery 4.** Focusing our efforts on [Bootstrap v3](https://github.com/entreprise7pro/bootstrap/tree/v3-dev), the future of the entreprise7pro forked bootstrap release of the framework. Pull requests which add new features (rather than fix bugs) should target [Bootstrap v3 (the `v3-dev` git branch)](https://github.com/entreprise7pro/bootstrap/tree/v3-dev).
+**entreprise7pro fork of Bootstrap v3 published a new release which is compatible with jQuery 4.** Focusing our efforts on [Bootstrap v3](https://github.com/entreprise7pro/bootstrap/tree/v3-dev), the future of the entreprise7pro forked bootstrap release of the framework is here. Pull requests which add new features (rather than fix bugs) should target [Bootstrap v3 (the `v3-dev` git branch)](https://github.com/entreprise7pro/bootstrap/tree/v3-dev).
 
 Editor preferences are available in the [editor config](https://github.com/entreprise7pro/bootstrap/blob/v3-dev/.editorconfig) for easy use in common text editors. Read more and download plugins at <https://editorconfig.org/>.
 
@@ -129,17 +129,18 @@ Thanks to [BrowserStack](https://www.browserstack.com/) for providing the infras
 
 **Mark Otto**
 
-* <https://twitter.com/mdo>
+* <https://x.com/mdo>
 * <https://github.com/mdo>
 
 **Jacob Thornton**
 
-* <https://twitter.com/fat>
+* <https://x.com/fat>
 * <https://github.com/fat>
 
 ## Maintainers of entreprise7pro fork of bootstrap 3
 * <https://drupal.org/u/joseph.olstad>
 * <https://github.com/joejoseph00>
+* <https://bootstrap.7pro.ca>
 
 ## Copyright and license
 
