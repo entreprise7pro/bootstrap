@@ -1,5 +1,8 @@
 # [Bootstrap 3](https://bootstrap.7pro.ca/)
 
+[![npm version](https://img.shields.io/npm/v/entreprise7pro-bootstrap.svg)](https://www.npmjs.com/package/entreprise7pro-bootstrap)
+<!--[![Build Status](https://img.shields.io/travis/entreprise7pro/bootstrap/v3-dev.svg)](https://travis-ci.org/entreprise7pro/bootstrap) TBD!-->
+
 ### Bower recognizes all github projects.
 
 - `bower install entreprise7pro/bootstrap --save`
@@ -9,11 +12,6 @@
 - `composer require entreprise7pro/bootstrap`
 - https://packagist.org/packages/entreprise7pro/bootstrap
 - https://packagist.org/packages/entreprise7pro/bootstrap-sass (optional)
-
-
-[![npm version](https://img.shields.io/npm/v/entreprise7pro-bootstrap.svg)](https://www.npmjs.com/package/entreprise7pro-bootstrap)
-
-[![Build Status](https://img.shields.io/travis/entreprise7pro/bootstrap/v3-dev.svg)](https://travis-ci.org/entreprise7pro/bootstrap) TBD!
 
 ### NPM installation
 
