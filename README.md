@@ -10,13 +10,16 @@
 - https://packagist.org/packages/entreprise7pro/bootstrap
 - https://packagist.org/packages/entreprise7pro/bootstrap-sass (optional)
 
+
 [![npm version](https://img.shields.io/npm/v/entreprise7pro-bootstrap.svg)](https://www.npmjs.com/package/entreprise7pro-bootstrap)
 
 [![NuGet](https://img.shields.io/nuget/v/entreprise7pro-bootstrap.svg)](https://www.nuget.org/packages/Entreprise7pro-Bootstrap)
 
 [![Build Status](https://img.shields.io/travis/entreprise7pro/bootstrap/v3-dev.svg)](https://travis-ci.org/entreprise7pro/bootstrap) TBD!
 
-[![devDependency Status](https://img.shields.io/david/dev/entreprise7pro/bootstrap.svg)](https://david-dm.org/entreprise7pro/bootstrap#info=devDependencies) TBD!
+### NPM installation
+
+- npm install entreprise7pro-bootstrap
 
 Bootstrap is a sleek, intuitive, and powerful front-end framework for faster and easier web development.
 
@@ -58,8 +61,8 @@ Several quick start options are available:
 * [Download the latest release](https://github.com/entreprise7pro/bootstrap/archive/refs/tags/v3.4.3.zip).
 * Clone the repo: `git clone https://github.com/entreprise7pro/bootstrap.git`.
 * Consume the CDNs https://bootstrap.7pro.ca
-* Install with [Meteor](https://www.meteor.com/): `meteor add entreprise7pro:bootstrap`. TBD
-* Install with [Composer](https://getcomposer.org/): `composer require entreprise7pro/bootstrap`. TBD
+* Install with [Composer](https://getcomposer.org/): `composer require entreprise7pro/bootstrap`.
+
 
 Read the [Getting started page](https://getbootstrap.com/docs/3.4/getting-started/) for information on the framework contents, templates and examples, and more.
 
