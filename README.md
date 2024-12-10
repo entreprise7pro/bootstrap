@@ -146,11 +146,16 @@ See [the Releases section of our GitHub project](https://github.com/entreprise7p
 
 ## Compiling
 
-* sudo apt install nodejs npm
-* sudo apt install node-grunt-cli
-* bundle exec grunt --force
-* npm run release
+* `sudo apt install nodejs npm`
+* `sudo apt install node-grunt-cli`
+* `bundle exec grunt --force`
+* `npm run release`
 * npm run release-zip
+
+## Publishing a new release to npm
+
+ * Compile first
+ * npm publish --access public
 
 ## Thanks
 
