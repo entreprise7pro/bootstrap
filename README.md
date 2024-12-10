@@ -13,13 +13,11 @@
 
 [![npm version](https://img.shields.io/npm/v/entreprise7pro-bootstrap.svg)](https://www.npmjs.com/package/entreprise7pro-bootstrap)
 
-[![NuGet](https://img.shields.io/nuget/v/entreprise7pro-bootstrap.svg)](https://www.nuget.org/packages/Entreprise7pro-Bootstrap)
-
 [![Build Status](https://img.shields.io/travis/entreprise7pro/bootstrap/v3-dev.svg)](https://travis-ci.org/entreprise7pro/bootstrap) TBD!
 
 ### NPM installation
 
-- npm install entreprise7pro-bootstrap
+- `npm install entreprise7pro-bootstrap`
 
 Bootstrap is a sleek, intuitive, and powerful front-end framework for faster and easier web development.
 
