@@ -100,7 +100,7 @@ Note that **feature requests must target [Bootstrap v3](https://github.com/entre
 
 ## Documentation
 
-Bootstrap's documentation, included in this repo in the root directory, is built with [Jekyll](https://jekyllrb.com/) and publicly hosted on GitHub Pages at <https://bootstrap.7pro.ca/>. The docs may also be run locally.
+Bootstrap's documentation, included in this repo in the root directory, is built with [Jekyll](https://jekyllrb.com/) and publicly hosted at <https://bootstrap.7pro.ca/>. The docs may also be run locally.
 
 ### Running documentation locally
 
@@ -113,8 +113,6 @@ Learn more about using Jekyll by reading its [documentation](https://jekyllrb.co
 
 ### Documentation for previous releases
 
-Documentation for v2.3.2 has been made available for the time being at <https://getbootstrap.com/2.3.2/> while folks transition to Bootstrap 3.
-
 [Previous releases](https://github.com/entreprise7pro/bootstrap/releases) and their documentation are also available for download.
 
 
@@ -124,7 +122,7 @@ Please read through our [contributing guidelines](https://github.com/entreprise7
 
 Moreover, if your pull request contains JavaScript patches or features, you must include [relevant unit tests](https://github.com/entreprise7pro/bootstrap/tree/v3-dev/js/tests). All HTML and CSS should conform to the [Code Guide](https://github.com/mdo/code-guide), maintained by [Mark Otto](https://github.com/mdo).
 
-**compatible with jQuery 4.** We are focusing our efforts on [Bootstrap v3](https://github.com/entreprise7pro/bootstrap/tree/v3-dev), the future of the entreprise7pro forked bootstrap release of the framework is here.
+**compatible with jQuery 4.** We are focusing our efforts on [Bootstrap v3](https://github.com/entreprise7pro/bootstrap/tree/v3-dev), the future of the entreprise7pro bootstrap release of the framework is here.
 
 Pull requests which add new features (rather than fix bugs) should target [Bootstrap v3 (the `v3-dev` git branch)](https://github.com/entreprise7pro/bootstrap/tree/v3-dev).
 
@@ -137,7 +135,7 @@ Get updates on Bootstrap's development and chat with the project maintainers and
 
 ootstrap` channel.
 * Implementation help may be found at Stack Overflow (tagged [`entreprise7pro-bootstrap`](https://stackoverflow.com/questions/tagged/entreprise7pro-bootstrap)).
-* Developers should use the keyword `bootstrap` and or `entreprise7pro` on packages which modify or add to the functionality of Bootstrap when distributing through [npm](https://www.npmjs.com/search?q=keywords:bootstrap) or similar delivery mechanisms for maximum discoverability.
+* Developers should use the keyword `bootstrap` and or `entreprise7pro` on packages which modify or add to the functionality of Bootstrap when distributing through [npm](https://www.npmjs.com/search?q=keywords:entreprise7pro-bootstrap) or similar delivery mechanisms for maximum discoverability.
 
 
 ## Versioning
