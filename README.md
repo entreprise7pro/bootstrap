@@ -2,7 +2,7 @@
 
 ## Why Entreprise7pro Bootstrap 3? 
 
-- Entreprise7pro Bootstrap 3 is compatible with jQuery 4
+- Entreprise7pro Bootstrap 3 is compatible with jQuery 4, jQuery 3, jQuery 2 and jQuery 1.8+
 - Entreprise7pro Bootstrap 3 has CVE fix for [CVE-2024-6485](https://nvd.nist.gov/vuln/detail/CVE-2024-6485)
 - What to expect going forward?
 1. CVE coverage
