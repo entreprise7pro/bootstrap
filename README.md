@@ -4,7 +4,10 @@
 
 - Entreprise7pro Bootstrap 3 is compatible with jQuery 4
 - Entreprise7pro Bootstrap 3 has CVE fix for [CVE-2024-6485](https://nvd.nist.gov/vuln/detail/CVE-2024-6485)
-- What to expect going forward?  1) CVE coverage 2) Bugfixes 3) The possibility of backporting one or more important features from bs4/bs5 into a new branch called 3.5.x.
+- What to expect going forward?
+1. CVE coverage
+2. Bugfixes
+3. The possibility of backporting one or more important features from bs4/bs5 into a new branch called 3.5.x.
 
 [![npm version](https://img.shields.io/npm/v/entreprise7pro-bootstrap.svg)](https://www.npmjs.com/package/entreprise7pro-bootstrap)
 <!--[![Build Status](https://img.shields.io/travis/entreprise7pro/bootstrap/v3-dev.svg)](https://travis-ci.org/entreprise7pro/bootstrap) TBD!-->
