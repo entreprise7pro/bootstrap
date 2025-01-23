@@ -1,5 +1,5 @@
 /* ========================================================================
- * Bootstrap: dropdown.js v3.4.4
+ * Bootstrap: dropdown.js v3.4.5
  * https://bootstrap.7pro.ca/docs/3.4/javascript/#dropdowns
  * ========================================================================
  * Copyright 2024 Entreprise 7pro.ca Inc.
@@ -21,7 +21,7 @@
     $(element).on('click.bs.dropdown', this.toggle)
   }
 
-  Dropdown.VERSION = '3.4.4'
+  Dropdown.VERSION = '3.4.5'
 
   function getParent($this) {
     var selector = $this.attr('data-target')
