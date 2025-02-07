@@ -1,5 +1,5 @@
 /* ========================================================================
- * Bootstrap: transition.js v3.4.5
+ * Bootstrap: transition.js v3.4.6
  * https://bootstrap.7pro.ca/docs/3.4/javascript/#transitions
  * ========================================================================
  * Copyright 2024 Entreprise 7pro.ca Inc.

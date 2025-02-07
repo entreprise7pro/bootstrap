@@ -1,5 +1,5 @@
 /* ========================================================================
- * Bootstrap: affix.js v3.4.5
+ * Bootstrap: affix.js v3.4.6
  * https://bootstrap.7pro.ca/docs/3.4/javascript/#affix
  * ========================================================================
  * Copyright 2024 Entreprise 7pro.ca Inc.
@@ -32,7 +32,7 @@
     this.checkPosition()
   }
 
-  Affix.VERSION = '3.4.5'
+  Affix.VERSION = '3.4.6'
 
   Affix.RESET    = 'affix affix-top affix-bottom'
 

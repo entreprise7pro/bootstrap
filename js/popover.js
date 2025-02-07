@@ -1,5 +1,5 @@
 /* ========================================================================
- * Bootstrap: popover.js v3.4.5
+ * Bootstrap: popover.js v3.4.6
  * https://bootstrap.7pro.ca/docs/3.4/javascript/#popovers
  * ========================================================================
  * Copyright 2024 Entreprise 7pro.ca Inc.
@@ -21,7 +21,7 @@
 
   if (!$.fn.tooltip) throw new Error('Popover requires tooltip.js')
 
-  Popover.VERSION = '3.4.5'
+  Popover.VERSION = '3.4.6'
 
   Popover.DEFAULTS = $.extend({}, $.fn.tooltip.Constructor.DEFAULTS, {
     placement: 'right',

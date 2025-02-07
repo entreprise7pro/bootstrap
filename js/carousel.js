@@ -1,5 +1,5 @@
 /* ========================================================================
- * Bootstrap: carousel.js v3.4.5
+ * Bootstrap: carousel.js v3.4.6
  * https://bootstrap.7pro.ca/docs/3.4/javascript/#carousel
  * ========================================================================
  * Copyright 2024 Entreprise 7pro.ca Inc.
@@ -32,7 +32,7 @@
       .on('mouseleave.bs.carousel', $.proxy(this.cycle, this))
   }
 
-  Carousel.VERSION = '3.4.5'
+  Carousel.VERSION = '3.4.6'
 
   Carousel.TRANSITION_DURATION = 600
 

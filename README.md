@@ -158,6 +158,9 @@ See [the Releases section of our GitHub project](https://github.com/entreprise7p
 * `sudo apt install nodejs npm`
 * `sudo apt install node-grunt-cli`
 * `bundle exec grunt --force`
+* `openssl dgst -sha384 -binary dist/js/bootstrap.min.js | base64`
+* `openssl dgst -sha384 -binary dist/css/bootstrap-theme.min.css | base64`
+* `openssl dgst -sha384 -binary dist/css/bootstrap.min.css | base64`
 * `npm run release`
 * npm run release-zip
 

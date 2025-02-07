@@ -1,5 +1,5 @@
 /* ========================================================================
- * Bootstrap: tab.js v3.4.5
+ * Bootstrap: tab.js v3.4.6
  * https://bootstrap.7pro.ca/docs/3.4/javascript/#tabs
  * ========================================================================
  * Copyright 2024 Entreprise 7pro.ca Inc.
@@ -21,7 +21,7 @@
     // jscs:enable requireDollarBeforejQueryAssignment
   }
 
-  Tab.VERSION = '3.4.5'
+  Tab.VERSION = '3.4.6'
 
   Tab.TRANSITION_DURATION = 150
 

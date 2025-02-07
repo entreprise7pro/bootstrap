@@ -13,7 +13,7 @@ window.onload = function () { // wait for load in a dumb way because B-0
   'use strict';
 
   var cw = '/*!\n' +
-           ' * Bootstrap v3.4.5 (https://bootstrap.7pro.ca/)\n' +
+           ' * Bootstrap v3.4.6 (https://bootstrap.7pro.ca/)\n' +
            ' * Copyright 2011-' + new Date().getFullYear() + ' Since 2024 Entreprise 7pro.ca Inc, previously Twitter, Inc.\n' +
            ' * Licensed under the MIT license\n' +
            ' */\n\n'
