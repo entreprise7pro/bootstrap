@@ -6,7 +6,7 @@
 Package.describe({
   name: 'entreprise7pro:bootstrap',  // https://atmospherejs.com/entreprise7pro/bootstrap
   summary: 'The most popular front-end framework for developing responsive, mobile first projects on the web.',
-  version: '3.4.6',
+  version: '3.4.7',
   git: 'https://github.com/entreprise7pro/bootstrap.git'
 });
 

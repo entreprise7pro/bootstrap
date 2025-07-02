@@ -1,5 +1,5 @@
 /*!
- * Bootstrap v3.4.6 (https://bootstrap.7pro.ca/)
+ * Bootstrap v3.4.7 (https://bootstrap.7pro.ca/)
  * Copyright 2025 Entreprise 7pro.ca Inc since v3.4.2
  * Copyright 2011-2019 Twitter Inc (now X)
  * Licensed under the MIT license
@@ -707,7 +707,7 @@ if (typeof jQuery === 'undefined') {
 
     if (!$.support.transition) return complete.call(this)
 
-    var scrollSize = $.camelCase(['scroll', dimension].join('-'))
+    var scrollSize = 'scroll' + (dimension === 'width' ? 'Width' : 'Height')
 
     this.$element
       .one('bsTransitionEnd', $.proxy(complete, this))
