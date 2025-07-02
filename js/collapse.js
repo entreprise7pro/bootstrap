@@ -89,7 +89,7 @@
 
     if (!$.support.transition) return complete.call(this)
 
-    var scrollSize = $.camelCase(['scroll', dimension].join('-'))
+    var scrollSize = 'scroll' + (dimension === 'width' ? 'Width' : 'Height')
 
     this.$element
       .one('bsTransitionEnd', $.proxy(complete, this))
