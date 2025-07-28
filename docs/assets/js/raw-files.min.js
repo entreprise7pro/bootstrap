@@ -1,5 +1,5 @@
 /*!
- * Bootstrap v3.4.7 (https://bootstrap.7pro.ca/)
+ * Bootstrap v3.4.8 (https://bootstrap.7pro.ca/)
  * Copyright 2025 Entreprise 7pro.ca Inc since v3.4.2
  * Copyright 2011-2019 Twitter Inc (now X)
  * Licensed under the MIT license

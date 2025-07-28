@@ -23,15 +23,15 @@ plugins:
 # Custom vars
 title:            Bootstrap
 description:      "The world's most popular mobile-first and responsive front-end framework."
-current_version:  3.4.7
+current_version:  3.4.8
 docs_version:     3.4
 repo:             https://github.com/entreprise7pro/bootstrap
 sass_repo:        https://github.com/entreprise7pro/bootstrap-sass
 
 download:
-  source:         https://github.com/entreprise7pro/bootstrap/archive/v3.4.7.zip
-  dist:           https://github.com/entreprise7pro/bootstrap/archive/refs/tags/v3.4.7.zip
-  sass:           https://github.com/entreprise7pro/bootstrap-sass/archive/refs/tags/v3.4.7.tar.gz
+  source:         https://github.com/entreprise7pro/bootstrap/archive/v3.4.8.zip
+  dist:           https://github.com/entreprise7pro/bootstrap/archive/refs/tags/v3.4.8.zip
+  sass:           https://github.com/entreprise7pro/bootstrap-sass/archive/refs/tags/v3.4.8.tar.gz
 
 blog:             https://blog.getbootstrap.com
 expo:             https://expo.getbootstrap.com
@@ -39,9 +39,9 @@ themes:           https://themes.getbootstrap.com
 
 cdn:
   # See https://www.srihash.org for info on how to generate the hashes
-  css:            https://cdn.jsdelivr.net/npm/entreprise7pro-bootstrap@3.4.7/dist/css/bootstrap.min.css
+  css:            https://cdn.jsdelivr.net/npm/entreprise7pro-bootstrap@3.4.8/dist/css/bootstrap.min.css
   css_hash:       "sha384-LlcaqoDiWdUusUsWj1uwb8YPTHc/UYZM+Ww/bg+mD7e3WOAnJhJyyH4lmeNSLYn1"
-  css_theme:      https://cdn.jsdelivr.net/npm/entreprise7pro-bootstrap@3.4.7/dist/css/bootstrap-theme.min.css
+  css_theme:      https://cdn.jsdelivr.net/npm/entreprise7pro-bootstrap@3.4.8/dist/css/bootstrap-theme.min.css
   css_theme_hash: "sha384-PGKM9zwCm3SSzbmcEsNjX99ULBaeYK6yiy2YmsS97DMOC4Q5TUQ3IDsnIKwGXq7s"
-  js:             https://cdn.jsdelivr.net/npm/entreprise7pro-bootstrap@3.4.7/dist/js/bootstrap.min.js
+  js:             https://cdn.jsdelivr.net/npm/entreprise7pro-bootstrap@3.4.8/dist/js/bootstrap.min.js
   js_hash:        "sha384-cuyO3LSZVZCR6DV6zQcCTxXl7OtdLVTA5hn5r/kj6AiMJyHaxMTnxsPH9r+81JtO"
