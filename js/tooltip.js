@@ -101,6 +101,8 @@
   }
 
   function sanitizeHtml(unsafeHtml, whiteList, sanitizeFn) {
+    var doc = null
+
     if (unsafeHtml.length === 0) {
       return unsafeHtml
     }
@@ -109,11 +111,18 @@
       return sanitizeFn(unsafeHtml)
     }
 
-    var createdDocument = document.implementation.createHTMLDocument('sanitization')
-    createdDocument.body.innerHTML = unsafeHtml
+    try {
+      doc = new DOMParser().parseFromString(unsafeHtml, 'text/html');
+    } catch (_) {}
+
+    if (!doc || !doc.documentElement) {
+      doc = document.implementation.createHTMLDocument('sanitization')
+      doc.body.innerHTML = unsafeHtml
+    }
 
     var whitelistKeys = $.map(whiteList, function (el, i) { return i })
-    var elements = $(createdDocument.body).find('*')
+    var body = doc.body || doc.documentElement;
+    var elements = $(body).find('*')
 
     for (var i = 0, len = elements.length; i < len; i++) {
       var el = elements[i]
@@ -135,7 +144,7 @@
       }
     }
 
-    return createdDocument.body.innerHTML
+    return body.innerHTML
   }
 
   // TOOLTIP PUBLIC CLASS DEFINITION
