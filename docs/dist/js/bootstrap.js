@@ -1,6 +1,6 @@
 /*!
- * Bootstrap v3.4.8 (https://bootstrap.7pro.ca/)
- * Copyright 2025 Entreprise 7pro.ca Inc since v3.4.2
+ * Bootstrap v3.4.9 (https://bootstrap.7pro.ca/)
+ * Copyright 2026 Entreprise 7pro.ca Inc since v3.4.2
  * Copyright 2011-2019 Twitter Inc (now X)
  * Licensed under the MIT license
  */
@@ -1459,6 +1459,7 @@ if (typeof jQuery === 'undefined') {
   }
 
   function sanitizeHtml(unsafeHtml, whiteList, sanitizeFn) {
+    var doc = null
     if (unsafeHtml.length === 0) {
       return unsafeHtml
     }
@@ -1467,11 +1468,26 @@ if (typeof jQuery === 'undefined') {
       return sanitizeFn(unsafeHtml)
     }
 
-    var createdDocument = document.implementation.createHTMLDocument('sanitization')
-    createdDocument.body.innerHTML = unsafeHtml
+    try {
+      doc = new DOMParser().parseFromString(unsafeHtml, 'text/html')
+    } catch (_) {}
+
+    if (!doc || !doc.documentElement) {
+      // Validate the fallback against DOM clobbering (CVE-2025-1647).
+      // This check is included in Debian's original security patch.
+      if (!document.implementation ||
+          typeof window.DOMImplementation === 'undefined' ||
+          !(document.implementation instanceof window.DOMImplementation) ||
+          typeof document.implementation.createHTMLDocument !== 'function') {
+        throw new Error('Bootstrap: Unable to safely sanitize HTML')
+      }
+      doc = document.implementation.createHTMLDocument('sanitization')
+      doc.body.innerHTML = unsafeHtml
+    }
 
     var whitelistKeys = $.map(whiteList, function (el, i) { return i })
-    var elements = $(createdDocument.body).find('*')
+    var body = doc.body || doc.documentElement
+    var elements = $(body).find('*')
 
     for (var i = 0, len = elements.length; i < len; i++) {
       var el = elements[i]
@@ -1493,7 +1509,7 @@ if (typeof jQuery === 'undefined') {
       }
     }
 
-    return createdDocument.body.innerHTML
+    return body.innerHTML
   }
 
   // TOOLTIP PUBLIC CLASS DEFINITION
