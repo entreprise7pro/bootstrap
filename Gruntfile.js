@@ -342,7 +342,19 @@ module.exports = function (grunt) {
         command: 'cross-env BROWSER=true karma start grunt/karma.conf.js'
       },
       karma: {
-        command: 'karma start grunt/karma.conf.js'
+        command: function () {
+          var command = 'karma start grunt/karma.conf.js';
+
+          // Snap Firefox cannot see profiles created in the host's /tmp.
+          // Do not change browser startup on CI or non-Snap systems.
+          if (process.platform === 'linux' && !process.env.CI &&
+              process.env.HOME && fs.existsSync('/snap/firefox/current')) {
+            grunt.file.mkdir(path.join(process.env.HOME, 'snap/firefox/common/karma-tmp'));
+            return 'TMPDIR="$HOME/snap/firefox/common/karma-tmp" ' + command;
+          }
+
+          return command;
+        }
       }
     }
   });
