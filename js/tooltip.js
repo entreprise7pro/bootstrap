@@ -101,6 +101,7 @@
   }
 
   function sanitizeHtml(unsafeHtml, whiteList, sanitizeFn) {
+    var doc = null
     if (unsafeHtml.length === 0) {
       return unsafeHtml
     }
@@ -109,11 +110,26 @@
       return sanitizeFn(unsafeHtml)
     }
 
-    var createdDocument = document.implementation.createHTMLDocument('sanitization')
-    createdDocument.body.innerHTML = unsafeHtml
+    try {
+      doc = new DOMParser().parseFromString(unsafeHtml, 'text/html')
+    } catch (_) {}
+
+    if (!doc || !doc.documentElement) {
+      // Validate the fallback against DOM clobbering (CVE-2025-1647).
+      // This check is included in Debian's original security patch.
+      if (!document.implementation ||
+          typeof window.DOMImplementation === 'undefined' ||
+          !(document.implementation instanceof window.DOMImplementation) ||
+          typeof document.implementation.createHTMLDocument !== 'function') {
+        throw new Error('Bootstrap: Unable to safely sanitize HTML')
+      }
+      doc = document.implementation.createHTMLDocument('sanitization')
+      doc.body.innerHTML = unsafeHtml
+    }
 
     var whitelistKeys = $.map(whiteList, function (el, i) { return i })
-    var elements = $(createdDocument.body).find('*')
+    var body = doc.body || doc.documentElement
+    var elements = $(body).find('*')
 
     for (var i = 0, len = elements.length; i < len; i++) {
       var el = elements[i]
@@ -135,7 +151,7 @@
       }
     }
 
-    return createdDocument.body.innerHTML
+    return body.innerHTML
   }
 
   // TOOLTIP PUBLIC CLASS DEFINITION
