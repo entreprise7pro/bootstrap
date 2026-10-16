@@ -63,7 +63,7 @@ To get started, check out <https://bootstrap.7pro.ca/>!
 
 Several quick start options are available:
 
-* [Download the latest release](https://github.com/entreprise7pro/bootstrap/archive/refs/tags/v3.4.3.zip).
+* [Download the latest release](https://github.com/entreprise7pro/bootstrap/releases/latest).
 * Clone the repo: `git clone https://github.com/entreprise7pro/bootstrap.git`.
 * Consume the CDNs https://bootstrap.7pro.ca
 * Install with [Composer](https://getcomposer.org/): `composer require entreprise7pro/bootstrap`.
@@ -164,10 +164,126 @@ See [the Releases section of our GitHub project](https://github.com/entreprise7p
 * `npm run release`
 * npm run release-zip
 
-## Publishing a new release to npm
+## Releasing a new version
 
- * Compile first
- * npm publish --access public
+Maintainer release checklist (example: **v3.4.10**). Substitute the new
+version in the commands for future releases. Prepare releases on **`v3-dev`**,
+the default branch; there is no need to merge into `main` just to publish.
+
+1. **Prepare the version.** From the repository root, check the branch and
+   working tree:
+
+   ```sh
+   git switch v3-dev
+   git status --short
+   ```
+
+   Synchronize version metadata in `package.json`, `package-lock.json`,
+   `package.js`, `_config.yml`, and the JavaScript component version headers
+   and `Constructor.VERSION` constants. Review any changes carefully; the
+   existing `npm run change-version` command performs broad replacements.
+
+2. **Test and build.** Install dependencies if necessary, then run:
+
+   ```sh
+   npm ci
+   npx grunt test-js
+   npm run release
+   git diff --check
+   git status --short
+   ```
+
+   `test-js` runs lint/style checks and the Karma browser tests; local Snap
+   Firefox may need a writable temporary-profile location if the Gruntfile
+   workaround has not been applied. `npm run release` produces the compiled
+   distribution, documentation, SRI hashes, and the release ZIP. Do **not**
+   run `npm run release-zip` a second time. Inspect the generated artifacts.
+
+3. **Commit, push, and verify CI.** Commit only intended changes (avoid local
+   `.tgz` files and other unrelated archives), push `v3-dev`, and verify the
+   [GitHub Actions checks](https://github.com/entreprise7pro/bootstrap/actions)
+   for that commit:
+
+   ```sh
+   git add -u
+   # Add any intended new files explicitly: git add <path>
+   git diff --cached --check
+   git diff --cached --stat
+   git commit -m "Release v3.4.10"
+   git push origin v3-dev
+   ```
+
+   Skip the commit if everything is already committed. Do not tag until the
+   relevant CI checks pass and release contents are final.
+
+4. **Tag the release** at the verified commit:
+
+   ```sh
+   git status --short
+   git tag -a v3.4.10 -m "Bootstrap v3.4.10"
+   git push origin v3.4.10
+   ```
+
+   Do not move or reuse a published tag.
+
+5. **Publish the GitHub Release** at
+   [New release](https://github.com/entreprise7pro/bootstrap/releases/new):
+   select `v3.4.10`, add release notes, optionally attach
+   `bootstrap-3.4.10-dist.zip`, and publish as the latest stable release.
+   A Git tag alone does not create a GitHub Release unless an automation
+   explicitly handles it.
+
+6. **Publish to npm**, after verifying no workflow already published the
+   version, using the manual CLI authentication procedure below. Package name:
+   `entreprise7pro-bootstrap` (not `entreprise7pro/bootstrap`). Check
+   availability, review contents, publish once, and verify the result:
+
+   ```sh
+   npm view entreprise7pro-bootstrap@3.4.10 version
+   npm pack --dry-run
+   npm pack
+   npm publish --access public
+   npm view entreprise7pro-bootstrap@3.4.10 version
+   ```
+
+7. **Check Packagist and the documentation site.** Verify that
+   [`entreprise7pro/bootstrap`](https://packagist.org/packages/entreprise7pro/bootstrap)
+   lists the new Git tag; if not, sign in and select **Update**. Confirm
+   [bootstrap.7pro.ca](https://bootstrap.7pro.ca/) reflects the new release
+   (deploy manually if necessary).
+
+### npm CLI authentication (manual publishing)
+
+Use the terminal login method, rather than npm's browser-login default:
+
+```sh
+npm login --auth-type=legacy
+npm whoami
+```
+
+Sign in with the maintainer account that has publishing rights for
+`entreprise7pro-bootstrap` (`josepholstad`); `npm whoami` verifies which
+account the CLI is using. Legacy login still requires any applicable 2FA
+verification. If npm opens a passkey/security-key prompt during account setup
+or authorization, a supported phone may offer **Use PIN** / **Try another
+way** instead of a fingerprint. A government smart card is not necessarily
+a compatible FIDO2 security key. Never commit npm credentials or tokens.
+
+Before publishing, inspect the tarball and check whether the version already
+exists on npm:
+
+```sh
+npm pack --dry-run
+npm view entreprise7pro-bootstrap@3.4.10 version
+npm publish --access public
+```
+
+Substitute the current release version for `3.4.10`. A 404/not-found result
+from `npm view` before publication is expected for a new version; if the
+version already exists, **do not publish it again**. `E403` requiring 2FA
+means login alone is insufficient: satisfy the account's current publishing
+security requirements, then retry. The command-line login method does not
+bypass publishing security checks.
 
 ## Thanks
 

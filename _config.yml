@@ -31,7 +31,7 @@ sass_repo:        https://github.com/entreprise7pro/bootstrap-sass
 download:
   source:         https://github.com/entreprise7pro/bootstrap/archive/v3.4.9.zip
   dist:           https://github.com/entreprise7pro/bootstrap/archive/refs/tags/v3.4.9.zip
-  sass:           https://github.com/entreprise7pro/bootstrap-sass/archive/refs/tags/v3.4.9.tar.gz
+  sass:           https://github.com/entreprise7pro/bootstrap-sass/archive/refs/tags/v3.4.5.tar.gz
 
 blog:             https://blog.getbootstrap.com
 expo:             https://expo.getbootstrap.com
