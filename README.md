@@ -324,7 +324,7 @@ Thanks to [BrowserStack](https://www.browserstack.com/) for providing the infras
 
 ## Copyright and license
 
-Entreprise 7pro.ca Inc. copyright 2024.
+Entreprise 7pro.ca Inc. copyright 2026.
 Currently released under [the MIT license](https://github.com/entreprise7pro/bootstrap/blob/v3-dev/LICENSE).
 Docs released under [Creative Commons](https://github.com/entreprise7pro/bootstrap/blob/v3-dev/docs/LICENSE).
 Code and documentation copyright 2011-2019 Twitter, Inc.
