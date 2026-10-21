@@ -239,6 +239,7 @@ the default branch; there is no need to merge into `main` just to publish.
    availability, review contents, publish once, and verify the result:
 
    ```sh
+   npm login --auth-type=web
    npm view entreprise7pro-bootstrap@3.4.10 version
    npm pack --dry-run
    npm pack
@@ -257,7 +258,7 @@ the default branch; there is no need to merge into `main` just to publish.
 Use the terminal login method, rather than npm's browser-login default:
 
 ```sh
-npm login --auth-type=legacy
+npm login --auth-type=web
 npm whoami
 ```
 
