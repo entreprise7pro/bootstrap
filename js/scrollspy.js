@@ -1,5 +1,5 @@
 /* ========================================================================
- * Bootstrap: scrollspy.js v3.4.6
+ * Bootstrap: scrollspy.js v3.4.10
  * https://bootstrap.7pro.ca/docs/3.4/javascript/#scrollspy
  * ========================================================================
  * Copyright 2024 Entreprise 7pro.ca Inc.
@@ -30,7 +30,7 @@
     this.process()
   }
 
-  ScrollSpy.VERSION = '3.4.6'
+  ScrollSpy.VERSION = '3.4.10'
 
   ScrollSpy.DEFAULTS = {
     offset: 10

@@ -1,5 +1,5 @@
 /* ========================================================================
- * Bootstrap: collapse.js v3.4.6
+ * Bootstrap: collapse.js v3.4.10
  * https://bootstrap.7pro.ca/docs/3.4/javascript/#collapse
  * ========================================================================
  * Copyright 2024 Entreprise 7pro.ca Inc.
@@ -32,7 +32,7 @@
     if (this.options.toggle) this.toggle()
   }
 
-  Collapse.VERSION = '3.4.6'
+  Collapse.VERSION = '3.4.10'
 
   Collapse.TRANSITION_DURATION = 350
 

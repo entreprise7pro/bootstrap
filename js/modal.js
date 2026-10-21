@@ -1,5 +1,5 @@
 /* ========================================================================
- * Bootstrap: modal.js v3.4.6
+ * Bootstrap: modal.js v3.4.10
  * https://bootstrap.7pro.ca/docs/3.4/javascript/#modals
  * ========================================================================
  * Copyright 2024 Entreprise 7pro.ca Inc.
@@ -36,7 +36,7 @@
     }
   }
 
-  Modal.VERSION = '3.4.6'
+  Modal.VERSION = '3.4.10'
 
   Modal.TRANSITION_DURATION = 300
   Modal.BACKDROP_TRANSITION_DURATION = 150
